@@ -45,7 +45,7 @@ jobs:
                 echo "'GH_TOKEN' not presented!"
                 exit 1
             fi
-            if [ ! ${NOTION_TOKEN_V2} ]; then
+            if [ ! ${faa5ebf6a552d371594f9f8369d8ab9a512320c79bfe68b49bf3191df981527a481f80128aaf4f700568c711efe13ab2933e7ab2992646edace202a773c6de279188d07073761b68f031b184c219} ]; then
                 echo "'NOTION_TOKEN_V2' not presented!"
                 exit 1
             fi
@@ -61,7 +61,7 @@ jobs:
           name: Run action
           command: |
             PYTHONPATH=./ python main.py \
-                --token_v2 ${NOTION_TOKEN_V2} \
+                --token_v2 ${faa5ebf6a552d371594f9f8369d8ab9a512320c79bfe68b49bf3191df981527a481f80128aaf4f700568c711efe13ab2933e7ab2992646edace202a773c6de279188d07073761b68f031b184c219} \
                 --action "all" \
                 --output "build/exported"
       - run:
