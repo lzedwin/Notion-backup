@@ -1,1 +1,8 @@
-
+version:2
+jobs:
+  build:
+    docker:
+      -image:circleci/node:18
+  steps:
+      -run:echo "A first hello"
+      -run:npm-V
